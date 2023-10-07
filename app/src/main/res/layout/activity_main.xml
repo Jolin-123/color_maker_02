@@ -37,7 +37,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:trackTint="#FF0000"
+        />
 
     <Switch
         android:id="@+id/switch_two"
@@ -51,7 +53,9 @@
         app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.596" />
+        app:layout_constraintVertical_bias="0.596"
+        android:trackTint="#00FF00"
+        />
 
     <Switch
         android:id="@+id/switch_three"
@@ -65,7 +69,9 @@
         app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.693" />
+        app:layout_constraintVertical_bias="0.693"
+        android:trackTint="#0000FF"
+        />
 
     <SeekBar
         android:id="@+id/seekBar"
@@ -76,7 +82,9 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.502" />
+        app:layout_constraintVertical_bias="0.502"
+        android:trackTint="#FF0000"
+        />
 
     <SeekBar
         android:id="@+id/seekBar_two"
@@ -87,7 +95,9 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.594" />
+        app:layout_constraintVertical_bias="0.594"
+        android:trackTint="#00FF00"
+        />
 
     <SeekBar
         android:id="@+id/seekBar_three"
@@ -98,7 +108,9 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.696" />
+        app:layout_constraintVertical_bias="0.696"
+        android:trackTint="#000FF0"
+        />
 
     <EditText
         android:id="@+id/numBox_one"
