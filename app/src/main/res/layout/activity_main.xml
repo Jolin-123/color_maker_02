@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <com.example.color_maker_02.Rectangle
+        android:id="@+id/customRectangle"
         android:layout_width="250dp"
         android:layout_height="180dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,18 +28,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.86" />
 
+
     <Switch
         android:id="@+id/switch_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
         android:scaleX="2"
         android:scaleY="2"
+
+        android:theme="@style/SwitchTheme"
+        android:thumb="@drawable/baseline_circle_24"
+        android:track="@drawable/track_selector_red"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:trackTint="#FF0000"
         />
 
     <Switch
@@ -48,13 +56,17 @@
         android:scaleX="2"
         android:scaleY="2"
 
+        android:theme="@style/SwitchTheme"
+        android:thumb="@drawable/baseline_circle_24"
+        android:track="@drawable/track_selector_green"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.596"
-        android:trackTint="#00FF00"
+
         />
 
     <Switch
@@ -64,26 +76,31 @@
         android:scaleX="2"
         android:scaleY="2"
 
+        android:theme="@style/SwitchTheme"
+        android:thumb="@drawable/baseline_circle_24"
+        android:track="@drawable/track_selector_blue"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.693"
-        android:trackTint="#0000FF"
+
         />
 
     <SeekBar
         android:id="@+id/seekBar"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
+        android:layout_width="190dp"
+        android:layout_height="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.502"
-        android:trackTint="#FF0000"
+
+        android:progressDrawable="@drawable/cus_seekbar_red"
         />
 
     <SeekBar
@@ -97,6 +114,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.594"
         android:trackTint="#00FF00"
+        android:thumbTint="@color/std_green"
         />
 
     <SeekBar
