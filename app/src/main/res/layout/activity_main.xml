@@ -62,10 +62,10 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.596"
+        app:layout_constraintVertical_bias="0.601"
 
         />
 
@@ -82,26 +82,29 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.693"
+        app:layout_constraintVertical_bias="0.7"
 
         />
+
+    <!-- android:progressDrawable="@drawable/cus_seekbar_red"-->
+<!--    android:thumbTint="@color/std_red"-->
+
 
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="190dp"
-        android:layout_height="5dp"
+        android:layout_height="10dp"
+        android:thumbTint="@color/std_red"
+        android:trackTint="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.502"
-
-        android:progressDrawable="@drawable/cus_seekbar_red"
-        />
+        app:layout_constraintVertical_bias="0.499" />
 
     <SeekBar
         android:id="@+id/seekBar_two"
@@ -128,12 +131,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.696"
         android:trackTint="#000FF0"
+        android:thumbTint="@color/std_blue"
+
         />
 
     <EditText
         android:id="@+id/numBox_one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
         android:ems="4"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -145,21 +150,21 @@
 
     <EditText
         android:id="@+id/numBox_two"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
         android:ems="4"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintHorizontal_bias="0.932"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.612" />
+        app:layout_constraintVertical_bias="0.589" />
 
     <EditText
         android:id="@+id/numBox_three"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
         android:ems="4"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"

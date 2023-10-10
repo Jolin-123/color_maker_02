@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity() {
                 val redValue = progress
 
                 // Format the normalized progress as a decimal with two decimal places
-                numBoxOne.setText(String.format("%.1f", normalizedProgress))
+                numBoxOne.setText(String.format("%.2f", normalizedProgress))
             }
 
             override fun onStartTrackingTouch(p0: SeekBar?) {}
