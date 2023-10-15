@@ -1,3 +1,9 @@
+//# Assignment-3 Color-picker Submission
+//My submission for CPSC 411, Section 01, Lab Week 8
+//* Name: Jiu Lin
+//*Email: milklinjob@gmail.com
+//*Modified: Oct 15, 2023
+
 package com.example.color_maker_02
 
 import android.content.res.ColorStateList
