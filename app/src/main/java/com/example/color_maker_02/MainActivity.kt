@@ -85,6 +85,11 @@ class MainActivity : AppCompatActivity() {
             switchOne.isChecked = false
             switchTwo.isChecked = false
             switchThree.isChecked = false
+
+            // Turn off the box input
+            numBoxOne.isEnabled = false
+            numBoxTwo.isEnabled = false
+            numBoxTwo.isEnabled = false
         }
 
         // EditText session ******************************************************
