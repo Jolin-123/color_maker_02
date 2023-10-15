@@ -23,22 +23,6 @@ class Rectangle @JvmOverloads constructor(context: Context, attr: AttributeSet? 
         rectStroke.setColor(Color.BLACK);
         rectStroke.setStrokeWidth(15F);
     }
-//
-//    var red:Int = 0
-//    var green:Int = 0
-//    var blue:Int = 0
-//
-//    fun setRedColor(red: Int) {
-//        paint.setARGB(255, red, green, blue)
-//        // Request a redraw
-//        invalidate()
-//    }
-//
-//    fun setGreenColor(green: Int) {
-//        paint.setARGB(255, red, green, blue)
-//        // Request a redraw
-//        invalidate()
-//    }
 
 
     // Set the color based on RGB values
