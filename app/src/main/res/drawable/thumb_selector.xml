@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+
+        <shape android:shape="oval">
+            <gradient
+                android:angle="270"
+                android:startColor="@color/white"
+                android:endColor="@color/light_gray"
+                android:type="linear"/>
+            <stroke android:color="@color/sixty_opacity_white" android:width="2dp"> </stroke>
+            <size android:height="28dp" android:width="28dp"  />
+
+        </shape>
+    </item>
+
+    <!-- Shadow layer for the thumb -->
+    <item android:id="@+id/shadow">
+        <shape android:shape="oval">
+            <solid android:color="#80000000"/> <!-- Shadow color -->
+        </shape>
+    </item>
 
 </selector>
+
+
+
+

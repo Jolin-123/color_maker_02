@@ -4,54 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
     tools:context=".MainActivity">
+
 
     <com.example.color_maker_02.Rectangle
         android:id="@+id/customRectangle"
-        android:layout_width="250dp"
-        android:layout_height="180dp"
+        android:layout_width="180dp"
+        android:layout_height="330dp"
+        android:layout_marginTop="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" />
-
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button_one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_switch_green"
-        android:backgroundTint="#1C267E"
+        android:layout_width="114dp"
+        android:layout_height="62dp"
+        android:background="@drawable/button_style"
+        android:gravity="center"
         android:text="RESET"
-        android:textSize="25dp"
+        android:textSize="20dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.72"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
-
-    <Switch
-        android:id="@+id/switch_one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-
-        android:scaleX="2"
-        android:scaleY="2"
-
-        android:theme="@style/SwitchTheme"
-        android:thumb="@drawable/baseline_circle_24"
-        android:track="@drawable/track_selector_red"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintVertical_bias="0.829" />
 
     <Switch
         android:id="@+id/switch_two"
@@ -66,10 +49,60 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.601" />
+        app:layout_constraintVertical_bias="0.413" />
+
+    <Switch
+        android:id="@+id/switch_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:scaleX="2"
+        android:scaleY="2"
+
+        android:theme="@style/SwitchTheme"
+        android:thumb="@drawable/baseline_circle_24"
+        android:track="@drawable/track_selector_red"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <SeekBar
+        android:id="@+id/seekBar_three"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:progress="30"
+        android:progressDrawable="@drawable/seekbar_progress_blue"
+        android:thumb="@drawable/thumb_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <EditText
+        android:id="@+id/numBox_three"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+
+        android:background="@drawable/box_stroke"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
 
     <Switch
         android:id="@+id/switch_three"
@@ -84,31 +117,16 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="0.581"
 
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-
-        android:progressDrawable="@drawable/seekbar_progress_red"
-        android:splitTrack="false"
-        android:thumb="@drawable/thumb_selector"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        />
 
     <SeekBar
         android:id="@+id/seekBar_two"
-        android:layout_width="190dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:progress="30"
         android:progressDrawable="@drawable/seekbar_progress_green"
@@ -117,33 +135,33 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.757"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.596" />
+        app:layout_constraintVertical_bias="0.391" />
 
     <SeekBar
-        android:id="@+id/seekBar_three"
-        android:layout_width="190dp"
+        android:id="@+id/seekBar"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:progress="30"
-        android:progressDrawable="@drawable/seekbar_progress_blue"
+
+        android:progressDrawable="@drawable/seekbar_progress_red"
+        android:splitTrack="false"
         android:thumb="@drawable/thumb_selector"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
-
+        app:layout_constraintHorizontal_bias="0.757"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708" />
+        app:layout_constraintVertical_bias="0.227" />
 
     <EditText
         android:id="@+id/numBox_one"
-        android:layout_width="75dp"
+        android:layout_width="65dp"
         android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+
         android:background="@drawable/box_stroke"
         android:ems="4"
         android:inputType="numberDecimal"
@@ -151,46 +169,26 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.221" />
 
     <EditText
         android:id="@+id/numBox_two"
-        android:layout_width="75dp"
+        android:layout_width="65dp"
         android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+
 
         android:background="@drawable/box_stroke"
         android:ems="4"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.608" />
-
-
-    <EditText
-        android:id="@+id/numBox_three"
-        android:layout_width="75dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-
-        android:background="@drawable/box_stroke"
-        android:ems="4"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.932"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.707" />
+        app:layout_constraintVertical_bias="0.398" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<!-- res/drawable/edittext_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white" /> <!-- Background color of the box -->
+    <stroke
+        android:width="2dp"
+    android:color="@color/sixty_opacity_white" />
+    <corners android:radius="0dp" />
+</shape>

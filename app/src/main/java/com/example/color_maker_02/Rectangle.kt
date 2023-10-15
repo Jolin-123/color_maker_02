@@ -17,13 +17,29 @@ class Rectangle @JvmOverloads constructor(context: Context, attr: AttributeSet? 
     // Initialize with a default color
     init {
         //fill
-        paint.color = Color.BLUE
-
-        // stroke
+        paint.color = Color.BLACK
+        // stroke for rectangle
         rectStroke.setStyle(Paint.Style.STROKE);
         rectStroke.setColor(Color.BLACK);
         rectStroke.setStrokeWidth(15F);
     }
+//
+//    var red:Int = 0
+//    var green:Int = 0
+//    var blue:Int = 0
+//
+//    fun setRedColor(red: Int) {
+//        paint.setARGB(255, red, green, blue)
+//        // Request a redraw
+//        invalidate()
+//    }
+//
+//    fun setGreenColor(green: Int) {
+//        paint.setARGB(255, red, green, blue)
+//        // Request a redraw
+//        invalidate()
+//    }
+
 
     // Set the color based on RGB values
     fun setColor(red: Int, green: Int, blue: Int) {
@@ -33,6 +49,7 @@ class Rectangle @JvmOverloads constructor(context: Context, attr: AttributeSet? 
     }
 
 
+    // Drawing the rectangle using draw.RoundRect() function
     private val radius: Float = resources.displayMetrics.density * 30f
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
