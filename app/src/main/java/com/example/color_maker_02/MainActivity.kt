@@ -68,6 +68,18 @@ class MainActivity : AppCompatActivity() {
         setDecimalFilter(editTextTwo,3)
         setDecimalFilter(editTextThree,3)
 
+        numBoxOne.isClickable = false
+        numBoxTwo.isClickable = false
+        numBoxThree.isClickable = false
+
+        numBoxOne.isEnabled = false
+        numBoxTwo.isEnabled = false
+        numBoxThree.isEnabled = false
+
+        seekBarOne.isEnabled = false
+        seekBarTwo.isEnabled = false
+        seekBarThree.isEnabled = false
+
         // Create an instance of the Rectangle class, initial rectangle color with black
         var rectangle = findViewById<Rectangle>(R.id.customRectangle)
 
@@ -81,6 +93,11 @@ class MainActivity : AppCompatActivity() {
             seekBarTwo.progress = 0
             seekBarThree.progress = 0
 
+            // Turn off the seekbar
+            seekBarOne.isEnabled = false
+            seekBarTwo.isEnabled = false
+            seekBarThree.isEnabled = false
+
             // Turn off the switch
             switchOne.isChecked = false
             switchTwo.isChecked = false
@@ -89,7 +106,8 @@ class MainActivity : AppCompatActivity() {
             // Turn off the box input
             numBoxOne.isEnabled = false
             numBoxTwo.isEnabled = false
-            numBoxTwo.isEnabled = false
+            numBoxThree.isEnabled = false
+
         }
 
         // EditText session ******************************************************
@@ -234,6 +252,8 @@ class MainActivity : AppCompatActivity() {
                 //seekBarOne.progress = 0
                 updateRectangleColor(rectangle)
                 Log.i(TAG,"switch 1 is off")
+                //number box is locked
+                numBoxOne.isEnabled = false
             }else {
                 // switch is "on"
                 // red switch turns "on", red valur is current(previous) seekbar.progress value, update rectangle color
@@ -241,6 +261,10 @@ class MainActivity : AppCompatActivity() {
                 red = (redValue / 100.0 * 255).toInt()
                 updateRectangleColor(rectangle)
                 Log.i(TAG, "red is $red")
+                // *** When EditText box can not be locked, users have bad input ***
+                // According to seekbar progress, text box display current seekbar value
+                val textNum = redValue / 100.0
+                numBoxOne.setText(String.format("%.3f", textNum))
             }
         }
 
@@ -254,6 +278,8 @@ class MainActivity : AppCompatActivity() {
                 //seekBarOne.progress = 0
                 updateRectangleColor(rectangle)
                 Log.i(TAG,"switch 2 is off")
+                // number box is locked
+                numBoxTwo.isEnabled = false
             }else {
                 // switch is "on"
                 // green switch turns "on", green valur is current(previous) seek bar progress value, update rectangle color
@@ -261,6 +287,10 @@ class MainActivity : AppCompatActivity() {
                 green = (greenValue / 100.0 * 255).toInt()
                 updateRectangleColor(rectangle)
                 Log.i(TAG, "green is $green")
+                // *** When EditText box can not be locked, users have bad input ***
+                // According to seekbar progress, text box display current seekbar value
+                val textNum = greenValue / 100.0
+                numBoxTwo.setText(String.format("%.3f", textNum))
             }
         }
 
@@ -278,6 +308,8 @@ class MainActivity : AppCompatActivity() {
                 //seekBarOne.progress = 0
                 updateRectangleColor(rectangle)
                 Log.i(TAG,"switch blue is off")
+                //number box is locked
+                numBoxThree.isEnabled = false
             }else {
                 // switch is "on"
                 //blue switch turns "on", blue valur is current(previous) seek bar progress value, update rectangle color
@@ -285,6 +317,10 @@ class MainActivity : AppCompatActivity() {
                 blue = (blueValue / 100.0 * 255).toInt()
                 updateRectangleColor(rectangle)
                 Log.i(TAG, "blue is $blue")
+                // *** When EditText box can not be locked, users have bad input ***
+                // According to seekbar progress, text box display current seekbar value
+                val textNum = blueValue / 100.0
+                numBoxThree.setText(String.format("%.3f", textNum))
             }
         }
     } // End of onCreate()
